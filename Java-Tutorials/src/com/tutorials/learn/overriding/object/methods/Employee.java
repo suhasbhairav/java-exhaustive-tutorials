@@ -26,4 +26,9 @@ public class Employee {
 		
 		return res;
 	}
+	
+	@Override
+	public int hashCode() {
+		return 10 * 10;
+	}
 }
