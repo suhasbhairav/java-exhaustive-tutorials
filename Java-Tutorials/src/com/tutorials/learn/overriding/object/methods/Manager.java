@@ -14,6 +14,18 @@ public class Manager extends Employee{
 		return super.toString() + "; dept = " + this.dept;
 	}
 	
+	@Override
+	public boolean equals(Object o) {
+		boolean res = false;
+		if(o != null && o instanceof Manager) {
+			if(o.toString().contains("s")) {
+				res = true;
+			}
+		}
+		
+		return res;
+	}
+	
 	public static void main(String[] args) {
 		Employee e = new Employee("Elon", "London");
 		System.out.println(e.toString());
