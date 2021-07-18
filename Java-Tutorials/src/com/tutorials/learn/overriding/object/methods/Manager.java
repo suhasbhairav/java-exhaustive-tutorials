@@ -26,6 +26,11 @@ public class Manager extends Employee{
 		return res;
 	}
 	
+	@Override
+	public int hashCode() {
+		return 20 * 20;
+	}
+	
 	public static void main(String[] args) {
 		Employee e = new Employee("Elon", "London");
 		System.out.println(e.toString());
