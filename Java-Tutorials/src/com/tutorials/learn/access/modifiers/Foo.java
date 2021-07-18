@@ -6,5 +6,9 @@ public class Foo {
 	//By default, the access modifier is default. Hence, cannot be accessed by classes
 	//and subclasses in a different package
 	int num = 25;
+	
+	protected String name = "Bangalore";
+	
+	int age = 10;
 
 }
