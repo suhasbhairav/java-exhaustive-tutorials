@@ -19,4 +19,13 @@ public class Statistics {
 		
 		return sum/nums.length;
 	}
+	
+	public String concatStrings(String...values) {
+		String ans = "";
+		for(String x: values) {
+			ans = ans.concat(x);
+		}
+		
+		return ans;
+	}
 }
